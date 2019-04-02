@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form class="login">
+        <div class="label">Benutzername oder Email Adresse</div>
+        <input type="text">
+    </form>
+<script type="text/javascript">
+    let field = document.querySelector('.login input');
+    let placeholder = document.querySelector('.login .label');
+    let body = document.querySelector('body');
+    let doc = window.document;
+
+    field.onfocus = function() {
+        placeholder.classList.add('placeholder');
+    }; 
+    field.onblur = function() {
+        placeholder.classList.remove('placeholder');
+    };  
+</script>
+</body>
+</html>
