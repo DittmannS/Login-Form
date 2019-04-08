@@ -10,6 +10,7 @@ let movePlaceholder = function() {
     fieldUser.onfocus = function() {
         placeholderUser.classList.add('placeholder');
     }; 
+
     fieldUser.onblur = function() {
         placeholderUser.classList.remove('placeholder');
     };
