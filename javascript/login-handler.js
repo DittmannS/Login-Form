@@ -16,7 +16,7 @@ let movePlaceholder = function() {
     };
     
     fieldUser.addEventListener('change', function() {
-        if(fieldUser.value != '') {
+        if(fieldUser.value !== '') {
             placeholderUser.classList.add('writing');
         } else {
             placeholderUser.classList.remove('writing');
