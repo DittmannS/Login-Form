@@ -8,7 +8,7 @@
   box-shadow: none;
   display: block;
   font-size: 20px;
-  padding: 1% 3%;
+  padding: 6px 3%;
   width: 94%;
 }
 .widget input:focus {
@@ -25,7 +25,8 @@
   transition-duration: 500ms;
   transition-timing-function: ease-out;
 }
-.widget label.placeholder {
+.widget label.placeholder,
+.widget label.writing {
   font-size: 10px;
   left: 10px;
   top: -11px;

@@ -14,8 +14,12 @@ let movePlaceholder = function() {
         placeholderUser.classList.remove('placeholder');
     };
     
-    fieldUser.addEventListener('input', function() {
-        console.log('writing');
+    fieldUser.addEventListener('change', function() {
+        if(fieldUser.value != '') {
+            placeholderUser.classList.add('writing');
+        } else {
+            placeholderUser.classList.remove('writing');
+        }
     })
     
     fieldPassword.onfocus = function() {
