@@ -5,25 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Form</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <form class="login">
-        <div class="label">Benutzername oder Email Adresse</div>
-        <input type="text">
+        <div class="widget username">
+            <label class="label">Benutzername oder Email Adresse</label>
+            <input class="input" type="text" id="user">
+        </div>
+        <div class="widget password">
+            <label class="label">Passwort</label>
+            <input class="input" type="password" id="password">
+        </div>
     </form>
-<script type="text/javascript">
-    let field = document.querySelector('.login input');
-    let placeholder = document.querySelector('.login .label');
-    let body = document.querySelector('body');
-    let doc = window.document;
 
-    field.onfocus = function() {
-        placeholder.classList.add('placeholder');
-    }; 
-    field.onblur = function() {
-        placeholder.classList.remove('placeholder');
-    };  
-</script>
+<script type="text/javascript" src="javascript/login-handler.js"></script>
 </body>
 </html>
