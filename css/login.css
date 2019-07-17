@@ -22,12 +22,12 @@
   position: absolute;
   top: 8px;
   transition-property: font-size, left, top;
-  transition-duration: 500ms;
+  transition-duration: 250ms;
   transition-timing-function: ease-out;
 }
 .widget label.placeholder,
 .widget label.writing {
   font-size: 10px;
   left: 10px;
-  top: -11px;
+  top: -6px;
 }
